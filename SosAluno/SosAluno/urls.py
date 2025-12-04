@@ -20,4 +20,7 @@ from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", include("core.urls")), # Rota raiz para a aplicação 'core'
+    path("users/", include("users.urls")), # Rotas para login/cadastro
+    path("evaluation/", include("evaluation.urls")), # Rotas para avaliação/ranking
 ]
