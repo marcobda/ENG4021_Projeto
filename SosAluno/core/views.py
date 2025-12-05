@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def index(request):
+    """View para a página inicial."""
+    return render(request, 'core/index.html')
